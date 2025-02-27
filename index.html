@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Lamola's Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Vincent Lamola</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="text-center py-5">
+        <div class="container">
+            <div style="padding-top: 20px; padding-right: 30px; padding-bottom: 10px; padding-left: 40px;">
+            <h1 class="display-4">Welcome to My Portfolio</h1>
+            <p class="lead">Transforming data into insights and ideas into interactive experiences – I’m a Web Developer and Data Scientist passionate about building the future, one line of code at a time.</p>
+            <a href="about.html" class="btn btn-primary btn-lg">Learn More About Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional: Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/NIHNiddk.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Science Captsone</h5>
+                            <p class="card-text">This is my Data Science Capstone project that demonstrates the level of skill and knowledge I acquired throughout the course of my studies.</p>
+                            <a href="https://github.com/VinceMagick/DataScienceCapstoneProject" class="btn btn-primary btn-lg">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/flyzy.png" class="card-img-top" width="auto" height="354" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Analysis with Flyzy</h5>
+                            <p class="card-text">The business objective of this project is to develop a reliable predictive model for flight cancellations to support Flyzy's mission of providing a smooth and hassle-free air travel experience.</p>
+                            <a href="https://github.com/VinceMagick/DataAnalysisFlyzy" class="btn btn-primary btn-lg">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/Kshamtalya.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Analysis with Kshamtalya</h5>
+                            <p class="card-text">Kshamtalaya Foundation is an India-based non-profit organization dedicated to transforming education in rural communities. Their mission is to empower students by implementing innovative and inclusive learning models that are tailored to the needs of underserved regions.</p>
+                            <a href="https://github.com/VinceMagick/DataAnalysisKshamtalaya" class="btn btn-primary btn-lg">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/pexels-goumbik-574071.jpg" class="card-img-top" alt="Project 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Hands-on Project: Personal Portfolio Webpage</h5>
+                            <p class="card-text">The aim of the project is to develop a Personal Portfolio Website. A portfolio lets you provide information about yourself and showcase your work/projects with your relevant skills and experience.</p>
+                            <a href="https://github.com/VinceMagick/NewProject" class="btn btn-primary btn-lg">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <div style="padding-top: 20px; padding-right: 30px; padding-bottom: 10px; padding-left: 40px;">
+    <footer class="bg-dark text-light text-center py-3">
+        <div style="padding-top: 20px; padding-right: 30px; padding-bottom: 10px; padding-left: 40px;">
+        <p>&copy; 2025 Vincent Lamola. All rights reserved.</p>
+        </div>
+    </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Placeholder for future JavaScript functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Document loaded. Ready to implement features!');
+            // Initialize app on document load
+            initializeApp();
+        });
+
+        function initializeApp() {
+            // Initialization code for your application
+            setupEventListeners();
+        }
+
+        function setupEventListeners() {
+            // Add any event listeners here
+            const learnMoreButton = document.querySelector('.btn.btn-primary');
+            learnMoreButton.addEventListener('click', function() {
+                alert('Learn more about me!');
+            });
+            // Additional event listeners can be added below
+            const contactButton = document.querySelector('a[href="#contact"]');
+            contactButton.addEventListener('click', function() {
+                alert('Thank you for reaching out!');
+            });
+        }
+    </script>
+</body>
+</html>
